@@ -36,7 +36,7 @@ var devMountainGoal = null;
 //plus the value of the name parameter.
 
 function greeting(name) {
-  return "Hello, " + string(name);
+  return "Hello, " + name;
 }
 
 //////////////////PROBLEM 7////////////////////
@@ -44,8 +44,8 @@ function greeting(name) {
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-let newGreeting(name) = function {
-  return "Hello, " + string(name);
+let newGreeting = function (name) {
+  return "Hello, " + name;
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -63,10 +63,10 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //and goodBoy (a boolean).
 
 let dog = {
-  name: "Ashkee";
-  color: "grey";
-  age: 2;
-  goodBoy: true;
+  name: "Ashkee",
+  color: "grey",
+  age: 2,
+  goodBoy: true
 }
 
 //...access the dog's name from the object and assign it to a
@@ -83,7 +83,7 @@ let devMountainClassPet = dog.name;
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-let nameCheck(NAMEPARAM) {
+let nameCheck = function (NAMEPARAM){
   if(NAMEPARAM==='Steven') {
     return 'What is up Steven?';
   }
@@ -118,7 +118,19 @@ var mathSum = add(3,4);
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function faveColorFinder (color) {
+  if(color === 'red') {
+    return 'red is a great color';
+  }
+  else if(color === 'green') {
+    return 'green is a solid favorite color';
+  }
+  else if(color === 'black') {
+    return 'so trendy';
+  }
+  else
+    return 'you need to evaluate your favorite color choice';
+}
 
 //////////////////PROBLEM 13////////////////////
 
@@ -142,28 +154,28 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = [ "sailorDuck", "rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
 //Create a variable called age with your age assigned to you
 
-// Code Here
+var age = 31;
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-// Code Here
+age++;
 
 // Good news! We can live forever. Set your age to 999
 
-// Code Here
+age = 999;
