@@ -2,31 +2,31 @@
 
 //Create a variable called myName that is a string data type
 
-//Code here
+let myName = "Jon-Erik";
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
 
-//Code here
+let myAge = 31;
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
 
-//Code here
+var lovesCode = true;
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-//Code here
+var greatestFear = undefined;
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
-//Code here
+var devMountainGoal = null;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -35,21 +35,25 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-//Code here
+function greeting(name) {
+  return "Hello, " + string(name);
+}
 
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-//Code Here
+let newGreeting(name) = function {
+  return "Hello, " + string(name);
+}
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //////////////////PROBLEM 9////////////////////
 
@@ -58,12 +62,17 @@
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+let dog = {
+  name: "Ashkee";
+  color: "grey";
+  age: 2;
+  goodBoy: true;
+}
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+let devMountainClassPet = dog.name;
 
 //////////////////PROBLEM 10////////////////////
 
@@ -74,7 +83,16 @@
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-// Code here
+let nameCheck(NAMEPARAM) {
+  if(NAMEPARAM==='Steven') {
+    return 'What is up Steven?';
+  }
+  else if(NAMEPARAM==='Bryan') {
+    return 'Hey Bryan!';
+  }
+  else
+    return 'Cool name, ' + NAMEPARAM;
+}
 
 //////////////////PROBLEM 11////////////////////
 
@@ -82,12 +100,14 @@
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+let add = function (num1, num2) {
+  return num1 + num2;
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-//Code Here
+var mathSum = add(3,4);
 
 //////////////////PROBLEM 12////////////////////
 
